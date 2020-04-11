@@ -8,8 +8,12 @@ Here's the demo:
 
 <img src="https://raw.githubusercontent.com/ekaputra07/go-playtime/master/demo.gif"/>
 
-**Note:**
+**Build**
 
-I didn't include the steps on how to build it as an executable app yet, if you're in rush you can just clone/fork this repo and build it your self.
+Sorry I didn't provide the executable binary for this app, so you need to build it yourself (tested on Mac only).
+```
+npm run build
+```
+It will create a new folder outside of this project diectory which contains the app.
 
 Cheers!
