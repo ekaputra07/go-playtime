@@ -62,14 +62,14 @@ function calculateWindowPosition() {
 }
 
 app.setAboutPanelOptions({
-  applicationName: "GoPlaytime",
+  applicationName: "Go Playtime",
   applicationVersion: "0.0.1",
   version: "1",
 });
 app.on("ready", () => {
   createWindow("https://play.golang.org");
 
-  tray = new Tray(path.join("assets/icon.png"));
+  tray = new Tray(path.join(__dirname, "/assets/icon.png"));
   tray.on("click", trayOnClick);
 });
 

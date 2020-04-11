@@ -1,17 +1,20 @@
 {
   "name": "go-playtime",
-  "productName": "GoPlaytime",
+  "productName": "Go Playtime",
   "version": "0.0.1",
   "description": "The Go playground on your desktop (unofficial)",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-packager . --asar --overwrite --out=../ --icon=./assets/icon.icns --ignore=demo\\.gif",
+    "build-all": "electron-packager . --all --asar --overwrite --out=../ --ignore=demo\\.gif",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eka Putra <ekaputra07@gmail.com> (https://github.com/ekaputra07)",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^8.2.1"
+    "electron": "^8.2.1",
+    "electron-packager": "^14.2.1"
   }
 }
