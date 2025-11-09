@@ -6,15 +6,14 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --asar --overwrite --out=../ --icon=./assets/icon.icns --ignore=demo\\.gif",
-    "build-all": "electron-packager . --all --asar --overwrite --out=../ --ignore=demo\\.gif",
+    "build": "electron-packager . --asar --overwrite --out=./dist --icon=./assets/icon.icns --ignore=demo\\.gif",
+    "build-all": "electron-packager . --all --asar --overwrite --out=./dist --ignore=demo\\.gif",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eka Putra <ekaputra07@gmail.com> (https://github.com/ekaputra07)",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "electron": "^22.2.0",
+    "electron": "^39.1.1",
     "electron-packager": "^17.1.1"
   }
 }
